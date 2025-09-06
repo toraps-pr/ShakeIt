@@ -1,0 +1,139 @@
+/*---GENERAL STYLES---*/
+:root{
+    /*colors*/
+    --color-black: #000000;
+    --color-back-black: #010101;
+    --color-white: #FFFFFF;
+    --color-murky-white: #F3F3F3;
+    --color-pink: #FD96A9;
+    --color-light-grey: #CCCACA;
+    --color-dark-grey: #8D8D8D;
+
+    /*text sizes*/
+    --font-size-titles: 90px; /*slogan and titles*/
+    --font-size-extra-large: 32px; /*titles of locations*/
+    --font-size-large: 28px; /*scores of comments*/
+    --font-size-extra-average: 24px; /*titles of loyalty cards, button*/
+    --font-size-average: 22px; /*names and prices of shakes*/
+    --font-size-usual: 18px; /*menu items, main text*/
+    --font-size-small: 16px; /*main text of shakes cards*/
+    --font-size-extra-small: 12px; /*qr codes description*/
+
+    /*fonts-families*/
+    --bowlby-one-sc: "Bowlby One SC", sans-serif;;
+    --manrope: "Manrope", sans-serif;
+
+    /*font boldness*/
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --font-weight-extra-bold: 800;
+}
+
+.text-color-white{
+    color: var(--color-white)
+}
+
+.text-color-black{
+    color: var(--color-back-black)
+}
+
+.text-color-pink{
+    color: var(--color-pink)
+}
+
+.text-color-gray{
+    color: var(--color-light-grey)
+}
+
+/*(90)slogan and titles*/
+.text-titles{
+    font-family: var(--bowlby-one-sc);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-size-titles);
+}
+
+/*(32)titles of locations*/
+.text-extra-large{
+    font-family: var(--manrope);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-size-extra-large);
+}
+
+/*(28)scores of comments*/
+.text-large{
+    font-family: var(--manrope);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-large);
+}
+
+/*(24)titles of loyalty cards, button*/
+.text-extra-average{
+    font-family: var(--manrope);
+    font-weight: var(--font-weight-extra-bold);
+    font-size: var(--font-extra-average);
+}
+
+/*(22)names and prices of shakes*/
+ .text-average{
+    font-family: var(--manrope);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-average);
+}
+
+/*(18)menu items, main text*/
+.text-usual{
+    font-family: var(--manrope);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-usual);
+}
+
+/*(16)main text of shakes cards*/
+.text-small{
+    font-family: var(--manrope);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-small);
+}
+
+/*(12)qr codes description*/
+.text-extra-small{
+    font-family: var(--manrope);
+    font-weight: var(--font-weight-medium);
+    font-size: var(--font-size-extra-small);
+}
+/*--------*/
+
+/*FOOTER PRESSED TO THE BOTTOM*/
+body, html{
+    height: 100%;
+}
+
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper > main{
+    flex-grow: 1;
+}
+/*-------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*layout*/
+.box-2-columns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px; 
+}
+
+.box-3-columns{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px; 
+}
